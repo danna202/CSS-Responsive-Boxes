@@ -23,10 +23,14 @@ container {
   justify-content: space-between;
 }                  
                     
-{   
+@media only screen and (max-width: 1200px) {
+  /* For desktop: */
+  [class*="col-"] 
+    width: 75%;  
+  }   
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;  
+  [class*="col-"] 
+    width: 75%;  
                 
   }
